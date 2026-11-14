@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/myFramework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="mf-header-50prjs">
+      <div class="mf-container">
+        <h1>Events Manager Application</h1>
+      </div>
+    </header>
+    <main>
+      <div class="mf-container">
+        <div class="add-box">
+          <h2>Add Event</h2>
+          <input type="text" class="event-name" placeholder="Event Name" />
+          <input type="text" class="organizer" placeholder="Event Organizer" />
+          <input type="date" class="event-date" />
+          <button id="add-event-btn" onclick="addEvent()">Add Event</button>
+        </div>
+        <div class="events"></div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

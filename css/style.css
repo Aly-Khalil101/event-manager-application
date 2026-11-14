@@ -1,0 +1,92 @@
+/* Start global rules */
+
+body {
+  background-color: aquamarine;
+  font-family: sans-serif;
+}
+/* End global rules */
+/* start add evetn container */
+.add-box {
+  align-items: center;
+  margin: 0 auto;
+  background: white;
+  padding: 2px 20px;
+}
+.add-box h2 {
+  font-size: 40px;
+
+  margin: 25px 0;
+}
+.add-box input {
+  display: block;
+  margin: 15px 0;
+  width: 95%;
+  background-color: #e7e2e2;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #3f3d3d;
+  padding: 0px 15px 0px 5px;
+}
+.add-box input:focus {
+  outline: none;
+}
+#add-event-btn {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 80%;
+  border: none;
+  background-color: #2d2d6b;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 6px 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+#add-event-btn:hover {
+  background-color: #060657;
+}
+/* End add evetn container */
+/* start Events */
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+.events .event {
+  background-color: white;
+  padding: 20px;
+}
+.events .event h3 {
+  margin: 0 0 20px;
+}
+.events .event p {
+  display: flex;
+  justify-content: space-between;
+}
+.events .event p:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.events .event button {
+  display: block;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #9a1818;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* .events .event button:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #811515;
+} */
+/* End Events */
